@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UI Animation Demo</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+
+  <link rel="stylesheet" type="text/css" href="fontawesome-free-5.2.0-web/css/all.min.css">
+  
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $(".motionBtn").click(function() {
+        $('.btnContent').toggleClass('active');
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header><h1>UI Animation Demo</h1></header>
+    <main>
+    	<p class="article dummyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dolor dui, consequat ut facilisis non, elementum sit amet felis. Sed ultrices nibh vel eros rutrum porta. In dictum lorem tortor, vitae finibus massa vehicula non. Duis vel eros vel enim varius fermentum. Pellentesque ornare, magna vitae bibendum fringilla, neque magna venenatis elit, nec consequat tortor purus at orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      <button class="motionBtn"><i class="far fa-envelope"></i> 我要訂閱</button>
+      <div class="btnContent">
+        <h2>我要訂閱</h2>
+        <p class="dummyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo finibus auctor. Sed leo metus, tincidunt id maximus vitae, aliquet in nisl. </p>
+        <div class="btnSet">
+          <button class="smallBtn">同意</button>
+          <button class="smallBtn disagree">不同意</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>Copyright © 2019 Infinite Creativity Technology</div>
+      <div class="btnGroup">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></i></a>
+        <a href="#"><i class="far fa-envelope"></i></a>
+      </div>
+    </footer>
+    
+    </div>    
+  </div>    
+</body>
+</html>
